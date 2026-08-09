@@ -24,7 +24,9 @@
   --sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --max: 1080px;
-  --radius: 3px;
+  --radius: 6px;
+  --shadow-panel: 0 1px 0 rgba(255, 255, 255, 0.03) inset, 0 12px 28px -12px rgba(0, 0, 0, 0.55);
+  --shadow-panel-hover: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 18px 36px -14px rgba(0, 0, 0, 0.6);
 }
 
 * { box-sizing: border-box; }
@@ -40,16 +42,26 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background-color: var(--bg);
   color: var(--text);
   font-family: var(--sans);
   font-size: 16px;
   line-height: 1.6;
   background-image:
+    /* grid lines — the "rack" */
     linear-gradient(var(--border-soft) 1px, transparent 1px),
-    linear-gradient(90deg, var(--border-soft) 1px, transparent 1px);
-  background-size: 64px 64px;
-  background-position: center top;
+    linear-gradient(90deg, var(--border-soft) 1px, transparent 1px),
+    /* node dots at every intersection — the "network" */
+    radial-gradient(circle at center, rgba(139, 147, 169, 0.35) 1px, transparent 1.4px),
+    /* ambient control-room glow, top-left amber / top-right teal */
+    radial-gradient(1100px 640px at 8% -8%, rgba(242, 165, 65, 0.08), transparent 60%),
+    radial-gradient(1100px 720px at 96% 6%, rgba(95, 179, 163, 0.09), transparent 62%),
+    radial-gradient(900px 600px at 50% 115%, rgba(95, 179, 163, 0.05), transparent 60%);
+  background-size: 64px 64px, 64px 64px, 64px 64px, auto, auto, auto;
+  background-position: center top, center top, center top, 0 0, 0 0, 0 0;
+  background-repeat: repeat, repeat, repeat, no-repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed, fixed, fixed, fixed;
+  min-height: 100vh;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -102,6 +114,7 @@ a { color: inherit; text-decoration: none; }
   background: rgba(15, 20, 32, 0.86);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
+  box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.5);
 }
 
 .topbar-inner {
@@ -240,7 +253,8 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  background: var(--bg-raised);
+  background: linear-gradient(180deg, var(--bg-raised) 0%, var(--bg-raised-2) 100%);
+  box-shadow: var(--shadow-panel);
 }
 
 .metric-card {
@@ -250,6 +264,11 @@ a { color: inherit; text-decoration: none; }
   flex-direction: column;
   gap: 8px;
   position: relative;
+  transition: background 0.2s ease;
+}
+
+.metric-card:hover {
+  background: rgba(255, 255, 255, 0.015);
 }
 .metric-card:last-child { border-right: none; }
 .metric-card::before {
@@ -333,7 +352,9 @@ a { color: inherit; text-decoration: none; }
   padding: 0;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--bg-raised);
+  background: linear-gradient(180deg, var(--bg-raised) 0%, var(--bg-raised-2) 100%);
+  box-shadow: var(--shadow-panel);
+  overflow: hidden;
 }
 
 .about-facts li {
@@ -433,8 +454,16 @@ a { color: inherit; text-decoration: none; }
 .service-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--bg-raised);
+  background: linear-gradient(165deg, var(--bg-raised) 0%, var(--bg-raised-2) 100%);
   padding: 20px 22px;
+  box-shadow: var(--shadow-panel);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.service-card:hover {
+  border-color: rgba(95, 179, 163, 0.4);
+  box-shadow: var(--shadow-panel-hover);
+  transform: translateY(-2px);
 }
 
 .service-head {
@@ -460,7 +489,13 @@ a { color: inherit; text-decoration: none; }
   border: 1px solid var(--border);
   border-radius: 20px;
   padding: 5px 11px;
-  background: var(--bg-raised-2);
+  background: rgba(255, 255, 255, 0.02);
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.tags span:hover {
+  border-color: rgba(95, 179, 163, 0.5);
+  color: var(--text);
 }
 
 @media (max-width: 780px) {
@@ -477,8 +512,27 @@ a { color: inherit; text-decoration: none; }
 .project-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--bg-raised);
+  background: linear-gradient(165deg, var(--bg-raised) 0%, var(--bg-raised-2) 100%);
   padding: 30px 32px;
+  box-shadow: var(--shadow-panel);
+  position: relative;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  border-radius: var(--radius) var(--radius) 0 0;
+  background: var(--amber);
+  opacity: 0.55;
+}
+
+.project-card:hover {
+  border-color: rgba(242, 165, 65, 0.4);
+  box-shadow: var(--shadow-panel-hover);
+  transform: translateY(-2px);
 }
 
 .project-top {
@@ -533,7 +587,8 @@ a { color: inherit; text-decoration: none; }
   font-size: 15px;
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--bg-raised);
+  background: linear-gradient(180deg, var(--bg-raised) 0%, var(--bg-raised-2) 100%);
+  box-shadow: var(--shadow-panel);
   padding: 14px 18px;
 }
 
@@ -546,7 +601,8 @@ a { color: inherit; text-decoration: none; }
 .edu-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--bg-raised);
+  background: linear-gradient(180deg, var(--bg-raised) 0%, var(--bg-raised-2) 100%);
+  box-shadow: var(--shadow-panel);
   padding: 20px;
 }
 
@@ -573,17 +629,19 @@ a { color: inherit; text-decoration: none; }
 .contact-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  background: var(--bg-raised);
+  background: linear-gradient(165deg, var(--bg-raised) 0%, var(--bg-raised-2) 100%);
+  box-shadow: var(--shadow-panel);
   padding: 20px 22px;
   display: flex;
   flex-direction: column;
   gap: 6px;
-  transition: border-color 0.15s ease, transform 0.15s ease;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .contact-card:hover {
   border-color: var(--amber);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-panel-hover);
 }
 
 .contact-label {
