@@ -468,6 +468,12 @@ a { color: inherit; text-decoration: none; }
 }
 
 /* ---------- projects ---------- */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .project-card {
   border: 1px solid var(--border);
   border-radius: var(--radius);
