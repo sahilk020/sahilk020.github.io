@@ -228,6 +228,15 @@
         </div>
       </div>
 
+      <div class="service-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>AI &amp; RAG Engineering</div>
+        <div class="tags">
+          <span>LangChain</span><span>Vector Databases</span><span>Text Chunking / Splitting</span>
+          <span>Embeddings</span><span>Semantic Search</span><span>BM25 / Hybrid Search</span>
+          <span>RAG Optimization</span><span>Prompt Engineering</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -236,6 +245,28 @@
     <div class="section-head">
       <p class="section-kicker">04 / projects</p>
       <h2 class="section-title">Systems built</h2>
+    </div>
+
+    <div class="projects-list">
+    <div class="project-card">
+      <div class="project-top">
+        <h3 class="project-title">RAG-based Document Q&amp;A System</h3>
+        <span class="log-badge log-badge-live">2 months</span>
+      </div>
+      <p class="project-desc">
+        A Retrieval-Augmented Generation proof-of-concept using LangChain that answers
+        natural-language questions grounded in uploaded PDF documents.
+      </p>
+      <ul class="log-list">
+        <li>Built a document ingestion pipeline that chunks PDF content into overlapping segments for optimal context retrieval.</li>
+        <li>Generated vector embeddings per chunk and stored them in a vector database for fast semantic similarity search.</li>
+        <li>Integrated an LLM to synthesize retrieved context into accurate, grounded answers to user queries.</li>
+        <li>Designed the pipeline to be modular — embedding model, vector store, and LLM provider can each be swapped independently.</li>
+      </ul>
+      <div class="tags">
+        <span>LangChain</span><span>Vector DB</span><span>Embeddings</span>
+        <span>Chunking</span><span>Semantic Search</span><span>LLM Integration</span>
+      </div>
     </div>
 
     <div class="project-card">
@@ -255,6 +286,7 @@
       <div class="tags">
         <span>ArgoCD</span><span>Kubernetes</span><span>GitOps</span><span>CI/CD</span>
       </div>
+    </div>
     </div>
   </section>
 
