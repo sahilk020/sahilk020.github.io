@@ -1042,3 +1042,79 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 600px) {
   .cta-panel { padding: 36px 22px; }
 }
+
+/* ================= NEW: brand logos ================= */
+
+/* ---------- hero tech strip ---------- */
+.stack-strip {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 18px 0;
+  margin-bottom: 40px;
+  border-top: 1px solid var(--border-soft);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.stack-strip-label {
+  font-family: var(--mono);
+  font-size: 11.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+
+.stack-strip-icons {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.stack-strip-icons img {
+  display: block;
+  opacity: 0.55;
+  filter: grayscale(1);
+  transition: opacity 0.2s ease, filter 0.2s ease, transform 0.2s ease;
+}
+
+.stack-strip-icons img:hover {
+  opacity: 1;
+  filter: grayscale(0.2);
+  transform: translateY(-1px);
+}
+
+@media (max-width: 640px) {
+  .stack-strip { gap: 12px; }
+  .stack-strip-icons { gap: 16px; }
+}
+
+/* ---------- service card logo rows ---------- */
+.card-logos {
+  display: flex;
+  gap: 12px;
+  margin: -4px 0 14px;
+}
+
+.card-logos img {
+  display: block;
+  opacity: 0.7;
+  filter: grayscale(0.3);
+  transition: opacity 0.2s ease, filter 0.2s ease;
+}
+
+.card-logos img:hover {
+  opacity: 1;
+  filter: grayscale(0);
+}
+
+/* ---------- workflow stage icons ---------- */
+.workflow-icon {
+  display: block;
+  margin-bottom: 4px;
+  opacity: 0.85;
+}
+
+.workflow-stage:hover .workflow-icon { opacity: 1; }
