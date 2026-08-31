@@ -98,6 +98,22 @@
       </div>
     </div>
 
+    <div class="stack-strip">
+      <span class="stack-strip-label">Core stack</span>
+      <div class="stack-strip-icons">
+        <img src="https://cdn.simpleicons.org/amazonaws/8b93a9" alt="AWS" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/terraform/8b93a9" alt="Terraform" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/docker/8b93a9" alt="Docker" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/kubernetes/8b93a9" alt="Kubernetes" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/ansible/8b93a9" alt="Ansible" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/jenkins/8b93a9" alt="Jenkins" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/argo/8b93a9" alt="ArgoCD" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/prometheus/8b93a9" alt="Prometheus" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/grafana/8b93a9" alt="Grafana" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/linux/8b93a9" alt="Linux" width="20" height="20" loading="lazy">
+      </div>
+    </div>
+
     <div class="metrics" role="group" aria-label="Key metrics">
       <div class="metric-card">
         <span class="metric-label">Uptime maintained</span>
@@ -340,14 +356,38 @@
       <h2 class="section-title">How a project runs</h2>
     </div>
     <div class="workflow-track">
-      <div class="workflow-stage"><span class="workflow-name">Plan</span><span class="workflow-tech">Git</span></div>
-      <div class="workflow-stage"><span class="workflow-name">Provision</span><span class="workflow-tech">Terraform</span></div>
-      <div class="workflow-stage"><span class="workflow-name">Build</span><span class="workflow-tech">Docker</span></div>
-      <div class="workflow-stage"><span class="workflow-name">Test</span><span class="workflow-tech">CI/CD</span></div>
-      <div class="workflow-stage"><span class="workflow-name">Secure</span><span class="workflow-tech">Trivy / VAPT</span></div>
-      <div class="workflow-stage"><span class="workflow-name">Deploy</span><span class="workflow-tech">K8s / ArgoCD</span></div>
-      <div class="workflow-stage"><span class="workflow-name">Monitor</span><span class="workflow-tech">Prometheus / Grafana</span></div>
-      <div class="workflow-stage"><span class="workflow-name">Optimize</span><span class="workflow-tech">Cost Tuning</span></div>
+      <div class="workflow-stage">
+        <img class="workflow-icon" src="https://cdn.simpleicons.org/git/8b93a9" alt="" width="22" height="22" loading="lazy">
+        <span class="workflow-name">Plan</span><span class="workflow-tech">Git</span>
+      </div>
+      <div class="workflow-stage">
+        <img class="workflow-icon" src="https://cdn.simpleicons.org/terraform/8b93a9" alt="" width="22" height="22" loading="lazy">
+        <span class="workflow-name">Provision</span><span class="workflow-tech">Terraform</span>
+      </div>
+      <div class="workflow-stage">
+        <img class="workflow-icon" src="https://cdn.simpleicons.org/docker/8b93a9" alt="" width="22" height="22" loading="lazy">
+        <span class="workflow-name">Build</span><span class="workflow-tech">Docker</span>
+      </div>
+      <div class="workflow-stage">
+        <img class="workflow-icon" src="https://cdn.simpleicons.org/jenkins/8b93a9" alt="" width="22" height="22" loading="lazy">
+        <span class="workflow-name">Test</span><span class="workflow-tech">CI/CD</span>
+      </div>
+      <div class="workflow-stage">
+        <svg class="workflow-icon" viewBox="0 0 24 24" fill="none" stroke="#8b93a9" stroke-width="1.6" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+        <span class="workflow-name">Secure</span><span class="workflow-tech">Trivy / VAPT</span>
+      </div>
+      <div class="workflow-stage">
+        <img class="workflow-icon" src="https://cdn.simpleicons.org/kubernetes/8b93a9" alt="" width="22" height="22" loading="lazy">
+        <span class="workflow-name">Deploy</span><span class="workflow-tech">K8s / ArgoCD</span>
+      </div>
+      <div class="workflow-stage">
+        <img class="workflow-icon" src="https://cdn.simpleicons.org/grafana/8b93a9" alt="" width="22" height="22" loading="lazy">
+        <span class="workflow-name">Monitor</span><span class="workflow-tech">Prometheus / Grafana</span>
+      </div>
+      <div class="workflow-stage">
+        <svg class="workflow-icon" viewBox="0 0 24 24" fill="none" stroke="#8b93a9" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v9M9.2 15.2c0 1 1.1 1.8 2.8 1.8s2.8-.7 2.8-1.8c0-2.6-5.6-1.2-5.6-3.8 0-1.1 1.1-1.8 2.8-1.8s2.8.7 2.8 1.7"/></svg>
+        <span class="workflow-name">Optimize</span><span class="workflow-tech">Cost Tuning</span>
+      </div>
     </div>
   </section>
 
@@ -362,6 +402,10 @@
 
       <div class="service-card">
         <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Cloud Platforms</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/amazonaws/8b93a9" alt="AWS" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/microsoftazure/8b93a9" alt="Azure" width="18" height="18" loading="lazy">
+        </div>
         <div class="tags">
           <span>AWS EC2</span><span>ECS</span><span>IAM</span><span>VPC</span>
           <span>Route53</span><span>ALB</span><span>API Gateway</span>
@@ -371,6 +415,10 @@
 
       <div class="service-card">
         <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Infrastructure as Code</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/terraform/8b93a9" alt="Terraform" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/ansible/8b93a9" alt="Ansible" width="18" height="18" loading="lazy">
+        </div>
         <div class="tags">
           <span>Terraform</span><span>Modular Design</span><span>Remote State</span><span>Ansible</span>
         </div>
@@ -378,6 +426,11 @@
 
       <div class="service-card">
         <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Containers &amp; Orchestration</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/docker/8b93a9" alt="Docker" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/kubernetes/8b93a9" alt="Kubernetes" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/argo/8b93a9" alt="ArgoCD" width="18" height="18" loading="lazy">
+        </div>
         <div class="tags">
           <span>Docker</span><span>Kubernetes</span><span>ECS</span><span>ArgoCD</span><span>GitOps</span>
         </div>
@@ -385,6 +438,11 @@
 
       <div class="service-card">
         <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>CI / CD</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/jenkins/8b93a9" alt="Jenkins" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/git/8b93a9" alt="Git" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/github/8b93a9" alt="GitHub" width="18" height="18" loading="lazy">
+        </div>
         <div class="tags">
           <span>Jenkins</span><span>Git</span><span>GitHub</span><span>Gradle</span><span>Nexus</span>
         </div>
@@ -392,6 +450,11 @@
 
       <div class="service-card">
         <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Monitoring &amp; Observability</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/prometheus/8b93a9" alt="Prometheus" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/grafana/8b93a9" alt="Grafana" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/elastic/8b93a9" alt="Elastic" width="18" height="18" loading="lazy">
+        </div>
         <div class="tags">
           <span>Prometheus</span><span>Grafana</span><span>ELK Stack</span><span>OpenSearch</span>
           <span>CloudWatch</span><span>Alertmanager</span><span>New Relic</span><span>SLA/SLO/SLI</span>
@@ -400,6 +463,9 @@
 
       <div class="service-card">
         <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>DevSecOps</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/sonarqube/8b93a9" alt="SonarQube" width="18" height="18" loading="lazy">
+        </div>
         <div class="tags">
           <span>Trivy</span><span>SonarQube</span><span>Image Hardening</span>
           <span>VA/PT</span><span>PCI-DSS</span><span>RBI Compliance</span><span>Wazuh SIEM</span>
@@ -416,6 +482,11 @@
 
       <div class="service-card">
         <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Scripting &amp; OS</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/gnubash/8b93a9" alt="Bash" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/python/8b93a9" alt="Python" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/linux/8b93a9" alt="Linux" width="18" height="18" loading="lazy">
+        </div>
         <div class="tags">
           <span>Bash</span><span>Shell</span><span>Python</span>
           <span>Ubuntu</span><span>Amazon Linux</span>
