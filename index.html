@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahil Koundal — DevOps Consultant | AWS Cloud, CI/CD &amp; Infrastructure Automation</title>
+<meta name="description" content="DevOps & Cloud Consultant helping teams migrate to AWS, automate CI/CD with Jenkins & Terraform, run Kubernetes reliably, cut cloud spend and prepare infrastructure for VAPT/compliance. Based in Pune, available remote.">
+<meta name="keywords" content="DevOps Consultant, AWS DevOps, Cloud Migration, CI/CD Consultant, Kubernetes Consultant, Terraform Consultant, Infrastructure Automation, Cloud Cost Optimization, VAPT Remediation, DevOps Consulting">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sahil Koundal — DevOps Consultant | AWS Cloud, CI/CD & Infrastructure Automation">
+<meta property="og:description" content="I help businesses migrate, automate, secure and optimize production infrastructure on AWS — CI/CD, Terraform, Kubernetes, monitoring and cost optimization.">
+<meta property="og:url" content="https://sahilkoundal.dev">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Sahil Koundal — DevOps Consultant">
+<meta name="twitter:description" content="AWS cloud migration, CI/CD automation, Kubernetes, cost optimization & compliance readiness.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230f1420'/%3E%3Ccircle cx='50' cy='50' r='14' fill='%23f2a541'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scanline" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="#top" class="brand">
+      <span class="brand-dot" aria-hidden="true"></span>
+      sahil<span class="brand-dim">@</span>koundal
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#about">about</a>
+      <a href="#services">services</a>
+      <a href="#experience">experience</a>
+      <a href="#case-studies">case studies</a>
+      <a href="#skills">stack</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <a class="topbar-status" href="#contact">
+      <span class="pulse-dot" aria-hidden="true"></span>
+      available for projects
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO / STATUS HEADER ============ -->
+  <section class="hero">
+    <div class="hero-top">
+      <div class="hero-inner">
+        <p class="eyebrow">// status.sahilkoundal.dev</p>
+        <span class="availability-badge">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Available for Freelance &amp; Consulting Projects
+        </span>
+        <h1 class="hero-title">Sahil Koundal</h1>
+        <p class="hero-role">
+          <span class="role-tag">DevOps Engineer</span>
+          <span class="role-sep">·</span>
+          <span class="role-tag">Cloud Infrastructure Specialist</span>
+          <span class="role-sep">·</span>
+          <span class="role-tag">SRE</span>
+        </p>
+        <p class="hero-desc">
+          I help businesses build, automate, secure and optimize reliable cloud
+          infrastructure on AWS — from migration and CI/CD to cost optimization,
+          Kubernetes and compliance readiness. Based in Pune, India, working with
+          clients remotely.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">Work With Me</a>
+          <a class="btn btn-ghost" href="#projects">View My Work</a>
+          <a class="btn btn-ghost" href="mailto:sahilkoundalwork2002@gmail.com">Let's Talk</a>
+        </div>
+        <a class="resume-link" href="resume.pdf" target="_blank" rel="noopener">View résumé →</a>
+      </div>
+
+      <div class="hero-terminal" aria-hidden="true">
+        <div class="terminal-chrome">
+          <span class="terminal-dot terminal-dot-r"></span>
+          <span class="terminal-dot terminal-dot-y"></span>
+          <span class="terminal-dot terminal-dot-g"></span>
+          <span class="terminal-title">deploy.sh — production</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="t-prompt">$</span> <span class="t-cmd">terraform apply -auto-approve</span></p>
+          <p class="t-out">Plan: 4 to add, 2 to change, 0 to destroy.</p>
+          <p class="t-out t-ok">apply complete. resources: 6 added, 2 changed.</p>
+          <p><span class="t-prompt">$</span> <span class="t-cmd">kubectl rollout status deploy/api</span></p>
+          <p class="t-out t-ok">deployment "api" successfully rolled out</p>
+          <p><span class="t-prompt">$</span> <span class="t-cmd">docker build --target prod .</span></p>
+          <p class="t-out">image size reduced 512MB → 256MB</p>
+          <p><span class="t-prompt">$</span> <span class="t-cmd">argocd app sync production<span class="t-cursor">▌</span></span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack-strip">
+      <span class="stack-strip-label">Core stack</span>
+      <div class="stack-strip-icons">
+        <img src="https://cdn.simpleicons.org/amazonaws/8b93a9" alt="AWS" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/terraform/8b93a9" alt="Terraform" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/docker/8b93a9" alt="Docker" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/kubernetes/8b93a9" alt="Kubernetes" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/ansible/8b93a9" alt="Ansible" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/jenkins/8b93a9" alt="Jenkins" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/argo/8b93a9" alt="ArgoCD" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/prometheus/8b93a9" alt="Prometheus" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/grafana/8b93a9" alt="Grafana" width="20" height="20" loading="lazy">
+        <img src="https://cdn.simpleicons.org/linux/8b93a9" alt="Linux" width="20" height="20" loading="lazy">
+      </div>
+    </div>
+
+    <div class="metrics" role="group" aria-label="Key metrics">
+      <div class="metric-card">
+        <span class="metric-label">Uptime maintained</span>
+        <span class="metric-value">99.9<span class="metric-unit">%</span></span>
+        <span class="metric-trend metric-trend-up">production SLA</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Deployment time</span>
+        <span class="metric-value">−70<span class="metric-unit">%</span></span>
+        <span class="metric-trend metric-trend-up">Jenkins + Terraform</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Cloud spend cut</span>
+        <span class="metric-value">20<span class="metric-unit">%+</span></span>
+        <span class="metric-trend metric-trend-up">right-sizing &amp; RIs</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-label">Docker image size</span>
+        <span class="metric-value">−50<span class="metric-unit">%</span></span>
+        <span class="metric-trend metric-trend-up">multi-stage builds</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="section-head">
+      <p class="section-kicker">01 / about</p>
+      <h2 class="section-title">Summary</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-text">
+        I'm a DevOps / Cloud / SRE engineer with 3+ years building and running production
+        systems on AWS and Azure. I've automated end-to-end CI/CD with Jenkins and Terraform,
+        cut deployment time by 70%, and kept services at 99.9% uptime through zero-downtime
+        rollouts. Security is built in, not bolted on — Trivy, SonarQube, and PCI-DSS/RBI
+        compliance are part of the pipeline, not an afterthought. On the reliability side,
+        I own SLA/SLO/SLI targets, lead incident response and RCA, and I'm increasingly
+        exploring how AI tooling can sharpen observability and automate the toil out of
+        on-call.
+      </p>
+      <ul class="about-facts">
+        <li><span>Location</span>Pune, India</li>
+        <li><span>Experience</span>3+ years</li>
+        <li><span>Focus</span>AWS, Azure, K8s, SRE</li>
+        <li><span>Certified</span>AWS SAA · CCP</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section">
+    <div class="section-head">
+      <p class="section-kicker">02 / services</p>
+      <h2 class="section-title">How I can help</h2>
+    </div>
+    <div class="help-grid">
+
+      <div class="help-card">
+        <p class="help-index">01</p>
+        <h3 class="help-title">Cloud Migration</h3>
+        <p class="help-desc">Migrate applications and infrastructure to AWS with minimal downtime and improved reliability.</p>
+      </div>
+
+      <div class="help-card">
+        <p class="help-index">02</p>
+        <h3 class="help-title">DevOps &amp; CI/CD</h3>
+        <p class="help-desc">Design and implement automated CI/CD pipelines using Jenkins, GitLab CI/CD and GitOps practices.</p>
+      </div>
+
+      <div class="help-card">
+        <p class="help-index">03</p>
+        <h3 class="help-title">Infrastructure Automation</h3>
+        <p class="help-desc">Automate provisioning and configuration using Terraform, Ansible and infrastructure-as-code.</p>
+      </div>
+
+      <div class="help-card">
+        <p class="help-index">04</p>
+        <h3 class="help-title">Kubernetes &amp; Containers</h3>
+        <p class="help-desc">Containerize applications and deploy / manage workloads on Docker and Kubernetes.</p>
+      </div>
+
+      <div class="help-card">
+        <p class="help-index">05</p>
+        <h3 class="help-title">Cloud Cost Optimization</h3>
+        <p class="help-desc">Audit infrastructure usage and cut unnecessary AWS spend without compromising reliability.</p>
+      </div>
+
+      <div class="help-card">
+        <p class="help-index">06</p>
+        <h3 class="help-title">Security, VAPT &amp; Compliance</h3>
+        <p class="help-desc">Prepare infrastructure for security assessments, VAPT remediation and compliance/audit requirements.</p>
+      </div>
+
+      <div class="help-card">
+        <p class="help-index">07</p>
+        <h3 class="help-title">Production Troubleshooting</h3>
+        <p class="help-desc">Debug infrastructure, networking, deployment, database and application issues, and restore service fast.</p>
+      </div>
+
+      <div class="help-card">
+        <p class="help-index">08</p>
+        <h3 class="help-title">Monitoring &amp; Observability</h3>
+        <p class="help-desc">Implement monitoring, alerting, logging and observability with Prometheus, Grafana, CloudWatch and ELK/OpenSearch.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE — deploy log ============ -->
+  <section id="experience" class="section">
+    <div class="section-head">
+      <p class="section-kicker">03 / experience</p>
+      <h2 class="section-title">Deploy log</h2>
+    </div>
+
+    <div class="log">
+
+      <article class="log-entry">
+        <div class="log-time">
+          <span class="log-date">Mar 2024 → present</span>
+          <span class="log-badge log-badge-live">running</span>
+        </div>
+        <div class="log-body">
+          <h3 class="log-role">DevOps Engineer <span class="log-org">— Pay10, Pune</span></h3>
+          <ul class="log-list">
+            <li>Operated highly available production infrastructure on AWS (EC2, ECS, IAM, VPC, Route53, ALB, API Gateway), sustaining 99.9% uptime via rolling, zero-downtime deployments.</li>
+            <li>Automated end-to-end CI/CD pipelines with Jenkins, Docker, Gradle, and Terraform — moving releases from manual to fully automated and cutting deployment time by 70%.</li>
+            <li>Provisioned infrastructure as code with reusable Terraform modules and remote state, reducing provisioning time by 70% vs. manual setup.</li>
+            <li>Optimized AWS spend via VPC endpoints and Route53 alias records, cutting NAT gateway and DNS lookup costs.</li>
+            <li>Built centralized observability with Prometheus, Grafana, ELK, OpenSearch, CloudWatch, and New Relic — sharpening SLA/SLO visibility.</li>
+            <li>Led incident response and RCA using ELK/OpenSearch and CloudWatch Logs, reducing MTTR on critical incidents.</li>
+            <li>Hardened Docker images with multi-stage builds, cutting image size by ~50%.</li>
+            <li>Ran Ansible-based provisioning and led DR implementation, replicating AWS infrastructure from Mumbai to Hyderabad.</li>
+            <li>Coordinated VA/PT remediation with Trivy and SonarQube, maintaining PCI-DSS/RBI compliance across Linux fleets.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="log-entry">
+        <div class="log-time">
+          <span class="log-date">Aug 2023 → Mar 2024</span>
+          <span class="log-badge">archived</span>
+        </div>
+        <div class="log-body">
+          <h3 class="log-role">DevOps Engineer, Contract <span class="log-org">— Freelance, Remote</span></h3>
+          <ul class="log-list">
+            <li>Migrated on-premises databases and applications to AWS and Azure for 2–3 clients with minimal-downtime cutover strategies.</li>
+            <li>Cut AWS cloud spend by 20%+ through right-sizing, reserved capacity planning, and eliminating unused resources.</li>
+            <li>Built Jenkins CI/CD pipelines, replacing manual releases and shortening release cycles.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM SOLVING ============ -->
+  <section id="problem-solving" class="section">
+    <div class="section-head">
+      <p class="section-kicker">04 / approach</p>
+      <h2 class="section-title">Production doesn't wait for documentation.</h2>
+    </div>
+    <div class="approach-grid">
+      <p class="about-text approach-text">
+        Anyone can write a deployment script. The value is in what happens when that
+        script fails at 2 a.m. My experience is in debugging real-world infrastructure
+        under pressure — tracing an issue back to its root cause instead of just
+        restarting the pod and hoping.
+      </p>
+      <div class="pipeline-flow" role="list" aria-label="Troubleshooting approach">
+        <span class="pipeline-step" role="listitem">Identify</span>
+        <span class="pipeline-arrow" aria-hidden="true">→</span>
+        <span class="pipeline-step" role="listitem">Diagnose</span>
+        <span class="pipeline-arrow" aria-hidden="true">→</span>
+        <span class="pipeline-step" role="listitem">Fix</span>
+        <span class="pipeline-arrow" aria-hidden="true">→</span>
+        <span class="pipeline-step" role="listitem">Automate</span>
+        <span class="pipeline-arrow" aria-hidden="true">→</span>
+        <span class="pipeline-step" role="listitem">Prevent</span>
+      </div>
+    </div>
+    <div class="tags problem-tags">
+      <span>Application connectivity</span><span>Docker networking</span>
+      <span>Kubernetes failures &amp; CrashLoopBackOff</span><span>CI/CD pipeline failures</span>
+      <span>Database connectivity</span><span>AWS networking</span><span>Load balancers</span>
+      <span>API Gateway</span><span>DNS</span><span>Infrastructure capacity</span>
+      <span>Deployment failures</span><span>Monitoring &amp; alerting gaps</span><span>Cloud cost issues</span>
+    </div>
+  </section>
+
+  <!-- ============ CASE STUDIES ============ -->
+  <section id="case-studies" class="section">
+    <div class="section-head">
+      <p class="section-kicker">05 / case studies</p>
+      <h2 class="section-title">Problem → solution → result</h2>
+    </div>
+    <div class="case-list">
+
+      <article class="case-card">
+        <h3 class="project-title">CI/CD Automation &amp; Deployment Time</h3>
+        <dl class="case-body">
+          <div class="case-row"><dt>Problem</dt><dd>Releases were handled manually, making deployments slow and inconsistent.</dd></div>
+          <div class="case-row"><dt>Investigation</dt><dd>Reviewed the existing release process to find where manual steps introduced delay and risk.</dd></div>
+          <div class="case-row"><dt>Solution</dt><dd>Built end-to-end CI/CD pipelines with Jenkins, Docker, Gradle and Terraform, replacing manual steps with automated build, test and deploy stages.</dd></div>
+          <div class="case-row"><dt>Result</dt><dd>Deployment time cut by 70%, with releases now fully automated.</dd></div>
+          <div class="case-row"><dt>Lessons</dt><dd>Any manual, repeatable step is a candidate for automation — treating pipelines as code makes releases predictable, not risky.</dd></div>
+        </dl>
+      </article>
+
+      <article class="case-card">
+        <h3 class="project-title">Disaster Recovery Across Regions</h3>
+        <dl class="case-body">
+          <div class="case-row"><dt>Problem</dt><dd>Production infrastructure was concentrated in a single AWS region, leaving no fallback if that region became unavailable.</dd></div>
+          <div class="case-row"><dt>Investigation</dt><dd>Assessed which components needed replication and how to keep configuration consistent across regions.</dd></div>
+          <div class="case-row"><dt>Solution</dt><dd>Used Ansible-based provisioning to replicate AWS infrastructure from Mumbai to Hyderabad.</dd></div>
+          <div class="case-row"><dt>Result</dt><dd>Established a working disaster-recovery environment as part of the infrastructure's standard operating posture.</dd></div>
+          <div class="case-row"><dt>Lessons</dt><dd>DR isn't a one-time project — it needs to be provisioned the same way as production, through code, so it doesn't drift.</dd></div>
+        </dl>
+      </article>
+
+      <article class="case-card">
+        <h3 class="project-title">Cloud Cost Optimization</h3>
+        <dl class="case-body">
+          <div class="case-row"><dt>Problem</dt><dd>NAT gateway and DNS lookup costs were adding avoidable overhead to the AWS bill.</dd></div>
+          <div class="case-row"><dt>Investigation</dt><dd>Traced traffic patterns to identify where connectivity was routing through costlier paths than necessary.</dd></div>
+          <div class="case-row"><dt>Solution</dt><dd>Introduced VPC endpoints and Route53 alias records to keep traffic off costlier paths.</dd></div>
+          <div class="case-row"><dt>Result</dt><dd>Reduced NAT gateway and DNS lookup costs as part of a broader effort that cut cloud spend by 20%+.</dd></div>
+          <div class="case-row"><dt>Lessons</dt><dd>Cost optimization is often an architecture problem, not just a billing-dashboard problem.</dd></div>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ WORKFLOW ============ -->
+  <section id="workflow" class="section">
+    <div class="section-head">
+      <p class="section-kicker">06 / workflow</p>
+      <h2 class="section-title">How a project runs</h2>
+    </div>
+    <div class="workflow-track">
+      <div class="workflow-stage">
+        <img class="workflow-icon" src="https://cdn.simpleicons.org/git/8b93a9" alt="" width="22" height="22" loading="lazy">
+        <span class="workflow-name">Plan</span><span class="workflow-tech">Git</span>
+      </div>
+      <div class="workflow-stage">
+        <img class="workflow-icon" src="https://cdn.simpleicons.org/terraform/8b93a9" alt="" width="22" height="22" loading="lazy">
+        <span class="workflow-name">Provision</span><span class="workflow-tech">Terraform</span>
+      </div>
+      <div class="workflow-stage">
+        <img class="workflow-icon" src="https://cdn.simpleicons.org/docker/8b93a9" alt="" width="22" height="22" loading="lazy">
+        <span class="workflow-name">Build</span><span class="workflow-tech">Docker</span>
+      </div>
+      <div class="workflow-stage">
+        <img class="workflow-icon" src="https://cdn.simpleicons.org/jenkins/8b93a9" alt="" width="22" height="22" loading="lazy">
+        <span class="workflow-name">Test</span><span class="workflow-tech">CI/CD</span>
+      </div>
+      <div class="workflow-stage">
+        <svg class="workflow-icon" viewBox="0 0 24 24" fill="none" stroke="#8b93a9" stroke-width="1.6" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/></svg>
+        <span class="workflow-name">Secure</span><span class="workflow-tech">Trivy / VAPT</span>
+      </div>
+      <div class="workflow-stage">
+        <img class="workflow-icon" src="https://cdn.simpleicons.org/kubernetes/8b93a9" alt="" width="22" height="22" loading="lazy">
+        <span class="workflow-name">Deploy</span><span class="workflow-tech">K8s / ArgoCD</span>
+      </div>
+      <div class="workflow-stage">
+        <img class="workflow-icon" src="https://cdn.simpleicons.org/grafana/8b93a9" alt="" width="22" height="22" loading="lazy">
+        <span class="workflow-name">Monitor</span><span class="workflow-tech">Prometheus / Grafana</span>
+      </div>
+      <div class="workflow-stage">
+        <svg class="workflow-icon" viewBox="0 0 24 24" fill="none" stroke="#8b93a9" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5v9M9.2 15.2c0 1 1.1 1.8 2.8 1.8s2.8-.7 2.8-1.8c0-2.6-5.6-1.2-5.6-3.8 0-1.1 1.1-1.8 2.8-1.8s2.8.7 2.8 1.7"/></svg>
+        <span class="workflow-name">Optimize</span><span class="workflow-tech">Cost Tuning</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS — service grid ============ -->
+  <section id="skills" class="section">
+    <div class="section-head">
+      <p class="section-kicker">07 / stack</p>
+      <h2 class="section-title">Service status</h2>
+    </div>
+
+    <div class="services">
+
+      <div class="service-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Cloud Platforms</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/amazonaws/8b93a9" alt="AWS" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/microsoftazure/8b93a9" alt="Azure" width="18" height="18" loading="lazy">
+        </div>
+        <div class="tags">
+          <span>AWS EC2</span><span>ECS</span><span>IAM</span><span>VPC</span>
+          <span>Route53</span><span>ALB</span><span>API Gateway</span>
+          <span>CloudWatch</span><span>Auto Scaling</span><span>Azure VMs</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Infrastructure as Code</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/terraform/8b93a9" alt="Terraform" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/ansible/8b93a9" alt="Ansible" width="18" height="18" loading="lazy">
+        </div>
+        <div class="tags">
+          <span>Terraform</span><span>Modular Design</span><span>Remote State</span><span>Ansible</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Containers &amp; Orchestration</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/docker/8b93a9" alt="Docker" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/kubernetes/8b93a9" alt="Kubernetes" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/argo/8b93a9" alt="ArgoCD" width="18" height="18" loading="lazy">
+        </div>
+        <div class="tags">
+          <span>Docker</span><span>Kubernetes</span><span>ECS</span><span>ArgoCD</span><span>GitOps</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>CI / CD</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/jenkins/8b93a9" alt="Jenkins" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/git/8b93a9" alt="Git" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/github/8b93a9" alt="GitHub" width="18" height="18" loading="lazy">
+        </div>
+        <div class="tags">
+          <span>Jenkins</span><span>Git</span><span>GitHub</span><span>Gradle</span><span>Nexus</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Monitoring &amp; Observability</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/prometheus/8b93a9" alt="Prometheus" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/grafana/8b93a9" alt="Grafana" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/elastic/8b93a9" alt="Elastic" width="18" height="18" loading="lazy">
+        </div>
+        <div class="tags">
+          <span>Prometheus</span><span>Grafana</span><span>ELK Stack</span><span>OpenSearch</span>
+          <span>CloudWatch</span><span>Alertmanager</span><span>New Relic</span><span>SLA/SLO/SLI</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>DevSecOps</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/sonarqube/8b93a9" alt="SonarQube" width="18" height="18" loading="lazy">
+        </div>
+        <div class="tags">
+          <span>Trivy</span><span>SonarQube</span><span>Image Hardening</span>
+          <span>VA/PT</span><span>PCI-DSS</span><span>RBI Compliance</span><span>Wazuh SIEM</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>SRE &amp; Reliability</div>
+        <div class="tags">
+          <span>Incident Management</span><span>RCA</span><span>High Availability</span>
+          <span>Disaster Recovery</span><span>Capacity Planning</span><span>Perf. Tuning</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Scripting &amp; OS</div>
+        <div class="card-logos">
+          <img src="https://cdn.simpleicons.org/gnubash/8b93a9" alt="Bash" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/python/8b93a9" alt="Python" width="18" height="18" loading="lazy">
+          <img src="https://cdn.simpleicons.org/linux/8b93a9" alt="Linux" width="18" height="18" loading="lazy">
+        </div>
+        <div class="tags">
+          <span>Bash</span><span>Shell</span><span>Python</span>
+          <span>Ubuntu</span><span>Amazon Linux</span>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>AI &amp; RAG Engineering</div>
+        <div class="tags">
+          <span>LangChain</span><span>Vector Databases</span><span>Text Chunking / Splitting</span>
+          <span>Embeddings</span><span>Semantic Search</span><span>BM25 / Hybrid Search</span>
+          <span>RAG Optimization</span><span>Prompt Engineering</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section">
+    <div class="section-head">
+      <p class="section-kicker">08 / projects</p>
+      <h2 class="section-title">Systems built</h2>
+    </div>
+
+    <div class="projects-list">
+    <div class="project-card">
+      <div class="project-top">
+        <h3 class="project-title">RAG-based Document Q&amp;A System</h3>
+        <span class="log-badge log-badge-live">2 months</span>
+      </div>
+      <p class="project-desc">
+        A Retrieval-Augmented Generation proof-of-concept using LangChain that answers
+        natural-language questions grounded in uploaded PDF documents.
+      </p>
+      <ul class="log-list">
+        <li>Built a document ingestion pipeline that chunks PDF content into overlapping segments for optimal context retrieval.</li>
+        <li>Generated vector embeddings per chunk and stored them in a vector database for fast semantic similarity search.</li>
+        <li>Integrated an LLM to synthesize retrieved context into accurate, grounded answers to user queries.</li>
+        <li>Designed the pipeline to be modular — embedding model, vector store, and LLM provider can each be swapped independently.</li>
+      </ul>
+      <div class="tags">
+        <span>LangChain</span><span>Vector DB</span><span>Embeddings</span>
+        <span>Chunking</span><span>Semantic Search</span><span>LLM Integration</span>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-top">
+        <h3 class="project-title">GitOps-based Kubernetes Deployment Pipeline</h3>
+        <span class="log-badge log-badge-live">operational</span>
+      </div>
+      <p class="project-desc">
+        A GitOps workflow using ArgoCD that continuously syncs Kubernetes manifests from a
+        Git repository, so cluster state always matches what's declared — no manual drift,
+        no surprise config.
+      </p>
+      <ul class="log-list">
+        <li>Environment-based manifest layout (dev / staging / prod) with scripted image tagging that triggers auto-deployment.</li>
+        <li>Git as the single source of truth for cluster state — instant rollback and a full audit trail of every deploy.</li>
+      </ul>
+      <div class="tags">
+        <span>ArgoCD</span><span>Kubernetes</span><span>GitOps</span><span>CI/CD</span>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY WORK WITH ME ============ -->
+  <section id="why" class="section">
+    <div class="section-head">
+      <p class="section-kicker">09 / why work with me</p>
+      <h2 class="section-title">What you get</h2>
+    </div>
+    <div class="services">
+
+      <div class="service-card value-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Production Mindset</div>
+        <p class="help-desc">I focus on reliability, availability and maintainability — not just getting something deployed.</p>
+      </div>
+
+      <div class="service-card value-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Fast Troubleshooting</div>
+        <p class="help-desc">I approach infrastructure problems systematically to identify root causes quickly.</p>
+      </div>
+
+      <div class="service-card value-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Automation First</div>
+        <p class="help-desc">If something is repeatedly done manually, I look for ways to automate it.</p>
+      </div>
+
+      <div class="service-card value-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Security Conscious</div>
+        <p class="help-desc">Security and compliance are considered during infrastructure design, not bolted on after deployment.</p>
+      </div>
+
+      <div class="service-card value-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Cost Aware</div>
+        <p class="help-desc">Infrastructure should be reliable without unnecessary cloud spend.</p>
+      </div>
+
+      <div class="service-card value-card">
+        <div class="service-head"><span class="pulse-dot" aria-hidden="true"></span>Business Focused</div>
+        <p class="help-desc">Technical decisions should support the business, not add unnecessary complexity.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ CERTS + EDUCATION ============ -->
+  <section class="section split">
+    <div>
+      <div class="section-head">
+        <p class="section-kicker">10 / certifications</p>
+        <h2 class="section-title">Verified</h2>
+      </div>
+      <ul class="cert-list">
+        <li>
+          <span class="cert-mark" aria-hidden="true">✓</span>
+          AWS Certified Solutions Architect — Associate
+        </li>
+        <li>
+          <span class="cert-mark" aria-hidden="true">✓</span>
+          AWS Certified Cloud Practitioner
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div class="section-head">
+        <p class="section-kicker">11 / education</p>
+        <h2 class="section-title">Foundation</h2>
+      </div>
+      <div class="edu-card">
+        <p class="edu-degree">B.Tech, Electronics &amp; Communication Engineering</p>
+        <p class="edu-school">AISSMS Institute of Information Technology, Pune</p>
+        <p class="edu-year">2019 – 2023</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLIENT ENGAGEMENT CTA ============ -->
+  <section class="section cta-section">
+    <div class="cta-panel">
+      <p class="section-kicker">12 / let's talk</p>
+      <h2 class="cta-title">Have a DevOps problem?</h2>
+      <p class="cta-text">
+        Whether it's a one-time troubleshooting call, a cloud migration, CI/CD setup,
+        infrastructure automation, Kubernetes implementation, AWS cost optimization,
+        security/compliance support, or ongoing DevOps consulting — reach out and
+        let's scope it out.
+      </p>
+      <div class="hero-cta cta-buttons">
+        <a class="btn btn-primary" href="#contact">Discuss Your Project</a>
+        <a class="btn btn-ghost" href="mailto:sahilkoundalwork2002@gmail.com">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact-section">
+    <div class="section-head">
+      <p class="section-kicker">13 / contact</p>
+      <h2 class="section-title">Let's build infrastructure that just works.</h2>
+    </div>
+    <p class="contact-lead">
+      Freelance, consulting, or full-time — my inbox is monitored 24/7.
+    </p>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:sahilkoundalwork2002@gmail.com">
+        <span class="contact-label">Email</span>
+        <span class="contact-value">sahilkoundalwork2002@gmail.com</span>
+      </a>
+      <a class="contact-card" href="tel:+919307739598">
+        <span class="contact-label">Phone</span>
+        <span class="contact-value">+91 93077 39598</span>
+      </a>
+      <a class="contact-card" href="https://www.linkedin.com/in/sahil-k-8a81bb178/" target="_blank" rel="noopener">
+        <span class="contact-label">LinkedIn</span>
+        <span class="contact-value">/in/sahil-k-8a81bb178</span>
+      </a>
+      <a class="contact-card" href="https://github.com/sahilk020" target="_blank" rel="noopener">
+        <span class="contact-label">GitHub</span>
+        <span class="contact-value">/sahilk020</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span><span class="pulse-dot" aria-hidden="true"></span>DevOps Engineer | Cloud | Automation | Reliability</span>
+  <span>© <span id="year"></span> Sahil Koundal · <a href="https://github.com/sahilk020" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/sahil-k-8a81bb178/" target="_blank" rel="noopener">LinkedIn</a></span>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
