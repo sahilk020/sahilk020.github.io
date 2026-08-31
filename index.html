@@ -49,32 +49,53 @@
 
   <!-- ============ HERO / STATUS HEADER ============ -->
   <section class="hero">
-    <div class="hero-inner">
-      <p class="eyebrow">// status.sahilkoundal.dev</p>
-      <span class="availability-badge">
-        <span class="pulse-dot" aria-hidden="true"></span>
-        Available for Freelance &amp; Consulting Projects
-      </span>
-      <h1 class="hero-title">Sahil Koundal</h1>
-      <p class="hero-role">
-        <span class="role-tag">DevOps Engineer</span>
-        <span class="role-sep">·</span>
-        <span class="role-tag">Cloud Infrastructure Specialist</span>
-        <span class="role-sep">·</span>
-        <span class="role-tag">SRE</span>
-      </p>
-      <p class="hero-desc">
-        I help businesses build, automate, secure and optimize reliable cloud
-        infrastructure on AWS — from migration and CI/CD to cost optimization,
-        Kubernetes and compliance readiness. Based in Pune, India, working with
-        clients remotely.
-      </p>
-      <div class="hero-cta">
-        <a class="btn btn-primary" href="#contact">Work With Me</a>
-        <a class="btn btn-ghost" href="#projects">View My Work</a>
-        <a class="btn btn-ghost" href="mailto:sahilkoundalwork2002@gmail.com">Let's Talk</a>
+    <div class="hero-top">
+      <div class="hero-inner">
+        <p class="eyebrow">// status.sahilkoundal.dev</p>
+        <span class="availability-badge">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          Available for Freelance &amp; Consulting Projects
+        </span>
+        <h1 class="hero-title">Sahil Koundal</h1>
+        <p class="hero-role">
+          <span class="role-tag">DevOps Engineer</span>
+          <span class="role-sep">·</span>
+          <span class="role-tag">Cloud Infrastructure Specialist</span>
+          <span class="role-sep">·</span>
+          <span class="role-tag">SRE</span>
+        </p>
+        <p class="hero-desc">
+          I help businesses build, automate, secure and optimize reliable cloud
+          infrastructure on AWS — from migration and CI/CD to cost optimization,
+          Kubernetes and compliance readiness. Based in Pune, India, working with
+          clients remotely.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">Work With Me</a>
+          <a class="btn btn-ghost" href="#projects">View My Work</a>
+          <a class="btn btn-ghost" href="mailto:sahilkoundalwork2002@gmail.com">Let's Talk</a>
+        </div>
+        <a class="resume-link" href="resume.pdf" target="_blank" rel="noopener">View résumé →</a>
       </div>
-      <a class="resume-link" href="resume.pdf" target="_blank" rel="noopener">View résumé →</a>
+
+      <div class="hero-terminal" aria-hidden="true">
+        <div class="terminal-chrome">
+          <span class="terminal-dot terminal-dot-r"></span>
+          <span class="terminal-dot terminal-dot-y"></span>
+          <span class="terminal-dot terminal-dot-g"></span>
+          <span class="terminal-title">deploy.sh — production</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="t-prompt">$</span> <span class="t-cmd">terraform apply -auto-approve</span></p>
+          <p class="t-out">Plan: 4 to add, 2 to change, 0 to destroy.</p>
+          <p class="t-out t-ok">apply complete. resources: 6 added, 2 changed.</p>
+          <p><span class="t-prompt">$</span> <span class="t-cmd">kubectl rollout status deploy/api</span></p>
+          <p class="t-out t-ok">deployment "api" successfully rolled out</p>
+          <p><span class="t-prompt">$</span> <span class="t-cmd">docker build --target prod .</span></p>
+          <p class="t-out">image size reduced 512MB → 256MB</p>
+          <p><span class="t-prompt">$</span> <span class="t-cmd">argocd app sync production<span class="t-cursor">▌</span></span></p>
+        </div>
+      </div>
     </div>
 
     <div class="metrics" role="group" aria-label="Key metrics">
